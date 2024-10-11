@@ -1,0 +1,93 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f0f0f0; /* Fallback background color */
+}
+
+.container {
+    display: flex; /* Use flexbox to arrange cards in a row */
+    justify-content: space-between; /* Space between cards */
+    width: 100%; /* Ensure the container takes the full width */
+    max-width: 1200px; /* Limit max width to prevent stretching on large screens */
+    padding: 20px; /* Padding around the container */
+}
+
+.chart {
+    background-color: rgba(0, 0, 0, 0.8); /* Black background with slight transparency */
+    color: white; /* White text color for contrast */
+    text-align: center; /* Center text horizontally */
+    padding: 10px; /* Padding around the content */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+    width: 200px; /* Set the width to a fixed size */
+    height: 200px; /* Set the height to the same value as width for square shape */
+    margin: 0 15px; /* Space around the cards */
+    transition: transform 0.3s; /* Smooth transition for scaling */
+    display: flex; /* Use flexbox for vertical alignment */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: space-between; /* Space out children */
+}
+
+.chart:hover {
+    transform: scale(1.05); /* Zoom in on hover */
+}
+
+.title {
+    margin-bottom: 10px; /* Space between title and video */
+}
+
+h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 16px; /* Adjust the font size */
+}
+
+.Vcon {
+    display: flex;
+    justify-content: center; /* Center the iframe horizontally */
+}
+
+iframe {
+    width: 150px; /* Set width for the iframe */
+    height: 150px; /* Set height for the iframe */
+    border: none; /* Remove default border */
+}
+
+.artist {
+    margin-top: 5px; /* Space above the artist name */
+    font-size: 14px; /* Adjust font size for artist name */
+    font-weight: bold; /* Make artist name bold */
+}
+
+/* Time period background classes */
+.morning {
+    background-image: url('img/1.jpg'); /* Replace with your morning image */
+}
+
+.afternoon {
+    background-image: url('img/2.jpg'); /* Replace with your afternoon image */
+}
+
+.evening {
+    background-image: url('img/3.jpg'); /* Replace with your evening image */
+}
+
+.midnight {
+    background-image: url('img/4.jpg'); /* Replace with your midnight image */
+}
+
+.time-label {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
